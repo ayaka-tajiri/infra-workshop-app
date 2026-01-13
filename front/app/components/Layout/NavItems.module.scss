@@ -1,0 +1,15 @@
+.navLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.navIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navText {
+  white-space: nowrap; /* 1文字ずつ縦になるのを防ぐ */
+}

@@ -1,0 +1,9 @@
+.appLayout {
+  /* 開いたときのナビ幅 */
+  --rmd-layout-navigation-width: 240px;
+}
+
+/* もし mini レイアウトも使うなら（細すぎて文字が縦になる対策） */
+.appLayout {
+  --rmd-layout-mini-navigation-width: 88px;
+}

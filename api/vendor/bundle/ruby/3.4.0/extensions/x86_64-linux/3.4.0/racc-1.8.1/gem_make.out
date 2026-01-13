@@ -1,0 +1,18 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-44388-vwscyf sitelibdir\=./.gem.20260113-44388-vwscyf clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-44388-vwscyf sitelibdir\=./.gem.20260113-44388-vwscyf
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-44388-vwscyf sitelibdir\=./.gem.20260113-44388-vwscyf install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260113-44388-vwscyf/racc
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-44388-vwscyf sitelibdir\=./.gem.20260113-44388-vwscyf clean

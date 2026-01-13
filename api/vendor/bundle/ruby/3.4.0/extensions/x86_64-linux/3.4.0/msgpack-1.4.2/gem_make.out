@@ -1,0 +1,708 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/msgpack-1.4.2/ext/msgpack
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... no
+checking for rb_str_replace() in ruby.h... yes
+checking for rb_intern_str() in ruby.h... yes
+checking for rb_enc_interned_str() in ruby.h... yes
+checking for rb_sym2str() in ruby.h... yes
+checking for rb_str_intern() in ruby.h... yes
+checking for rb_block_lambda() in ruby.h... yes
+checking for rb_hash_dup() in ruby.h... yes
+checking for rb_hash_clear() in ruby.h... yes
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/msgpack-1.4.2/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-hoa8dh sitelibdir\=./.gem.20260113-31848-hoa8dh clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/msgpack-1.4.2/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-hoa8dh sitelibdir\=./.gem.20260113-31848-hoa8dh
+compiling buffer.c
+buffer.c: In function ‘msgpack_buffer_static_init’:
+buffer.c:36:6: warning: old-style function definition [-Wold-style-definition]
+   36 | void msgpack_buffer_static_init()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer.c: In function ‘msgpack_buffer_static_destroy’:
+buffer.c:53:6: warning: old-style function definition [-Wold-style-definition]
+   53 | void msgpack_buffer_static_destroy()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling buffer_class.c
+buffer_class.c: In function ‘Buffer_alloc’:
+buffer_class.c:60:5: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   60 |     return Data_Wrap_Struct(klass, msgpack_buffer_mark, Buffer_free, b);
+      |     ^~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from compat.h:22,
+                 from buffer_class.c:19:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘MessagePack_Buffer_wrap’:
+buffer_class.c:114:5: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  114 |     return Data_Wrap_Struct(cMessagePack_Buffer, msgpack_buffer_mark, NULL, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_initialize’:
+buffer_class.c:144:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  144 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_clear’:
+buffer_class.c:153:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  153 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_size’:
+buffer_class.c:160:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  160 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_empty_p’:
+buffer_class.c:167:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  167 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_write’:
+buffer_class.c:177:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  177 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_append’:
+buffer_class.c:189:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  189 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘read_until_eof’:
+buffer_class.c:261:17: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  261 |                 read_until_eof_error, (VALUE)(void*) args,
+      |                 ^~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:41:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/iterator.h:388:63: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+  388 | VALUE rb_rescue2(VALUE (*b_proc)(VALUE), VALUE data1, VALUE (*r_proc)(VALUE, VALUE), VALUE data2, ...);
+      |                                                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_skip’:
+buffer_class.c:294:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  294 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_skip_all’:
+buffer_class.c:309:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  309 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_read_all’:
+buffer_class.c:347:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  347 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_read’:
+buffer_class.c:393:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  393 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_to_str’:
+buffer_class.c:436:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  436 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_to_a’:
+buffer_class.c:442:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  442 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_flush’:
+buffer_class.c:448:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  448 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_io’:
+buffer_class.c:455:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  455 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_close’:
+buffer_class.c:461:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  461 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+buffer_class.c: In function ‘Buffer_write_to’:
+buffer_class.c:470:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  470 |     BUFFER(self, b);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling extension_value_class.c
+compiling factory_class.c
+factory_class.c: In function ‘Factory_alloc’:
+factory_class.c:64:5: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   64 |     VALUE self = Data_Wrap_Struct(klass, Factory_mark, Factory_free, fc);
+      |     ^~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from compat.h:22,
+                 from factory_class.h:21,
+                 from factory_class.c:19:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c: In function ‘Factory_initialize’:
+factory_class.c:70:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   70 |     FACTORY(self, fc);
+      |     ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c: In function ‘MessagePack_Factory_packer’:
+factory_class.c:90:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   90 |     FACTORY(self, fc);
+      |     ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c:96:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   96 |     Data_Get_Struct(packer, msgpack_packer_t, pk);
+      |     ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c: In function ‘MessagePack_Factory_unpacker’:
+factory_class.c:107:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  107 |     FACTORY(self, fc);
+      |     ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c:113:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  113 |     Data_Get_Struct(unpacker, msgpack_unpacker_t, uk);
+      |     ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c: In function ‘Factory_registered_types_internal’:
+factory_class.c:123:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  123 |     FACTORY(self, fc);
+      |     ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+factory_class.c: In function ‘Factory_register_type’:
+factory_class.c:140:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  140 |     FACTORY(self, fc);
+      |     ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling packer.c
+packer.c: In function ‘msgpack_packer_static_init’:
+packer.c:30:6: warning: old-style function definition [-Wold-style-definition]
+   30 | void msgpack_packer_static_init()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer.c: In function ‘msgpack_packer_static_destroy’:
+packer.c:42:6: warning: old-style function definition [-Wold-style-definition]
+   42 | void msgpack_packer_static_destroy()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from packer.h:22,
+                 from packer.c:19:
+In function ‘msgpack_packer_ext_registry_lookup’,
+    inlined from ‘msgpack_packer_write_other_value’ at packer.c:128:18:
+packer_ext_registry.h:122:13: warning: ‘lookup_class’ may be used uninitialized [-Wmaybe-uninitialized]
+  122 |     args[0] = lookup_class;
+      |     ~~~~~~~~^~~~~~~~~~~~~~
+packer_ext_registry.h: In function ‘msgpack_packer_write_other_value’:
+packer_ext_registry.h:85:11: note: ‘lookup_class’ was declared here
+   85 |     VALUE lookup_class;
+      |           ^~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling packer_class.c
+packer_class.c: In function ‘MessagePack_Packer_alloc’:
+packer_class.c:62:5: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   62 |     VALUE self = Data_Wrap_Struct(klass, Packer_mark, Packer_free, pk);
+      |     ^~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from compat.h:22,
+                 from packer_class.c:19:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘MessagePack_Packer_initialize’:
+packer_class.c:96:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   96 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_compatibility_mode_p’:
+packer_class.c:115:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  115 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_buffer’:
+packer_class.c:121:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  121 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write’:
+packer_class.c:127:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  127 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_nil’:
+packer_class.c:134:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  134 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_true’:
+packer_class.c:141:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  141 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_false’:
+packer_class.c:148:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  148 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_float’:
+packer_class.c:155:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  155 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_string’:
+packer_class.c:162:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  162 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_bin’:
+packer_class.c:170:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  170 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_array’:
+packer_class.c:182:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  182 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_hash’:
+packer_class.c:190:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  190 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_symbol’:
+packer_class.c:198:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  198 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_int’:
+packer_class.c:206:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  206 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_extension’:
+packer_class.c:219:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  219 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_array_header’:
+packer_class.c:235:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  235 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_map_header’:
+packer_class.c:242:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  242 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_bin_header’:
+packer_class.c:249:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  249 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_float32’:
+packer_class.c:260:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  260 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_ext’:
+packer_class.c:267:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  267 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_flush’:
+packer_class.c:279:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  279 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_clear’:
+packer_class.c:286:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  286 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_size’:
+packer_class.c:293:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  293 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_empty_p’:
+packer_class.c:300:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  300 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_to_str’:
+packer_class.c:310:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  310 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_to_a’:
+packer_class.c:316:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  316 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_write_to’:
+packer_class.c:322:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  322 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_registered_types_internal’:
+packer_class.c:341:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  341 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_register_type’:
+packer_class.c:351:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  351 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_class.c: In function ‘Packer_full_pack’:
+packer_class.c:402:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  402 |     PACKER(self, pk);
+      |     ^~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling packer_ext_registry.c
+packer_ext_registry.c: In function ‘msgpack_packer_ext_registry_static_init’:
+packer_ext_registry.c:23:6: warning: old-style function definition [-Wold-style-definition]
+   23 | void msgpack_packer_ext_registry_static_init()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+packer_ext_registry.c: In function ‘msgpack_packer_ext_registry_static_destroy’:
+packer_ext_registry.c:28:6: warning: old-style function definition [-Wold-style-definition]
+   28 | void msgpack_packer_ext_registry_static_destroy()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+unpacker.c: In function ‘msgpack_unpacker_static_init’:
+unpacker.c:37:6: warning: old-style function definition [-Wold-style-definition]
+   37 | void msgpack_unpacker_static_init()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker.c: In function ‘msgpack_unpacker_static_destroy’:
+unpacker.c:46:6: warning: old-style function definition [-Wold-style-definition]
+   46 | void msgpack_unpacker_static_destroy()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling unpacker_class.c
+unpacker_class.c: In function ‘MessagePack_Unpacker_alloc’:
+unpacker_class.c:64:5: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   64 |     VALUE self = Data_Wrap_Struct(klass, Unpacker_mark, Unpacker_free, uk);
+      |     ^~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from compat.h:22,
+                 from buffer.h:21,
+                 from unpacker.h:21,
+                 from unpacker_class.c:19:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘MessagePack_Unpacker_initialize’:
+unpacker_class.c:95:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   95 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_symbolized_keys_p’:
+unpacker_class.c:120:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  120 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_freeze_p’:
+unpacker_class.c:126:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  126 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_allow_unknown_ext_p’:
+unpacker_class.c:132:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  132 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_buffer’:
+unpacker_class.c:156:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  156 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_read’:
+unpacker_class.c:162:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  162 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_skip’:
+unpacker_class.c:174:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  174 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_skip_nil’:
+unpacker_class.c:186:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  186 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_read_array_header’:
+unpacker_class.c:201:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  201 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_read_map_header’:
+unpacker_class.c:214:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  214 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_peek_next_type’:
+unpacker_class.c:227:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  227 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_feed’:
+unpacker_class.c:256:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  256 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_feed_reference’:
+unpacker_class.c:267:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  267 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_each_impl’:
+unpacker_class.c:278:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  278 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_each’:
+unpacker_class.c:307:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  307 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c:316:17: warning: passing argument 3 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  316 |                 Unpacker_rescue_EOFError, self,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:41:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/iterator.h:388:63: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+  388 | VALUE rb_rescue2(VALUE (*b_proc)(VALUE), VALUE data1, VALUE (*r_proc)(VALUE, VALUE), VALUE data2, ...);
+      |                                                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_reset’:
+unpacker_class.c:338:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  338 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_registered_types_internal’:
+unpacker_class.c:347:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  347 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_register_type’:
+unpacker_class.c:361:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  361 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: In function ‘Unpacker_full_unpack’:
+unpacker_class.c:403:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  403 |     UNPACKER(self, uk);
+      |     ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_class.c: At top level:
+unpacker_class.c:225:14: warning: ‘Unpacker_peek_next_type’ defined but not used [-Wunused-function]
+  225 | static VALUE Unpacker_peek_next_type(VALUE self)
+      |              ^~~~~~~~~~~~~~~~~~~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling unpacker_ext_registry.c
+unpacker_ext_registry.c: In function ‘msgpack_unpacker_ext_registry_static_init’:
+unpacker_ext_registry.c:24:6: warning: old-style function definition [-Wold-style-definition]
+   24 | void msgpack_unpacker_ext_registry_static_init()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unpacker_ext_registry.c: In function ‘msgpack_unpacker_ext_registry_static_destroy’:
+unpacker_ext_registry.c:30:6: warning: old-style function definition [-Wold-style-definition]
+   30 | void msgpack_unpacker_ext_registry_static_destroy()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object msgpack/msgpack.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/msgpack-1.4.2/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-hoa8dh sitelibdir\=./.gem.20260113-31848-hoa8dh install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20260113-31848-hoa8dh/msgpack
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/msgpack-1.4.2/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-hoa8dh sitelibdir\=./.gem.20260113-31848-hoa8dh clean

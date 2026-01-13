@@ -1,0 +1,23 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.20.1/ext/bootsnap
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for fstatat() in sys/stat.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260113-40980-ma57wf sitelibdir\=./.gem.20260113-40980-ma57wf clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260113-40980-ma57wf sitelibdir\=./.gem.20260113-40980-ma57wf
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260113-40980-ma57wf sitelibdir\=./.gem.20260113-40980-ma57wf install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20260113-40980-ma57wf/bootsnap
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260113-40980-ma57wf sitelibdir\=./.gem.20260113-40980-ma57wf clean

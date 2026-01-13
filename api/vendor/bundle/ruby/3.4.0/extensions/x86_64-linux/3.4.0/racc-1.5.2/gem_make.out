@@ -1,0 +1,33 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.5.2/ext/racc/cparse
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-q8y4fq sitelibdir\=./.gem.20260113-31848-q8y4fq clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-q8y4fq sitelibdir\=./.gem.20260113-31848-q8y4fq
+compiling cparse.c
+cparse.c: In function ‘call_lexer’:
+cparse.c:302:5: warning: ‘rb_iterate’ is deprecated: by: rb_block_call since 1.9 [-Wdeprecated-declarations]
+  302 |     rb_iterate(lexer_iter, v->value_v, lexer_i, v->value_v);
+      |     ^~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:41,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from cparse.c:14:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/iterator.h:283:7: note: declared here
+  283 | VALUE rb_iterate(VALUE (*func1)(VALUE), VALUE data1, rb_block_call_func_t proc, VALUE data2);
+      |       ^~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object racc/cparse.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-q8y4fq sitelibdir\=./.gem.20260113-31848-q8y4fq install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260113-31848-q8y4fq/racc
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-q8y4fq sitelibdir\=./.gem.20260113-31848-q8y4fq clean

@@ -1,0 +1,283 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/puma-4.3.8/ext/puma_http11
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version in openssl/ssl.h... yes
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/puma-4.3.8/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-m4qw1l sitelibdir\=./.gem.20260113-31848-m4qw1l clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/puma-4.3.8/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-m4qw1l sitelibdir\=./.gem.20260113-31848-m4qw1l
+compiling http11_parser.c
+compiling io_buffer.c
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from io_buffer.c:2:
+io_buffer.c: In function ‘buf_append’:
+io_buffer.c:38:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   38 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:38:3: note: in expansion of macro ‘Data_Get_Struct’
+   38 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+io_buffer.c: In function ‘buf_append2’:
+io_buffer.c:75:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   75 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:75:3: note: in expansion of macro ‘Data_Get_Struct’
+   75 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+io_buffer.c: In function ‘buf_to_str’:
+io_buffer.c:117:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  117 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:117:3: note: in expansion of macro ‘Data_Get_Struct’
+  117 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+io_buffer.c: In function ‘buf_used’:
+io_buffer.c:124:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  124 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:124:3: note: in expansion of macro ‘Data_Get_Struct’
+  124 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+io_buffer.c: In function ‘buf_capa’:
+io_buffer.c:131:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  131 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:131:3: note: in expansion of macro ‘Data_Get_Struct’
+  131 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+io_buffer.c: In function ‘buf_reset’:
+io_buffer.c:138:32: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  138 |   Data_Get_Struct(self, struct buf_int, b);
+      |                                ^~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+io_buffer.c:138:3: note: in expansion of macro ‘Data_Get_Struct’
+  138 |   Data_Get_Struct(self, struct buf_int, b);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling mini_ssl.c
+mini_ssl.c: In function ‘get_dh1024’:
+mini_ssl.c:65:5: warning: old-style function definition [-Wold-style-definition]
+   65 | DH *get_dh1024() {
+      |     ^~~~~~~~~~
+mini_ssl.c:89:3: warning: ‘DH_new’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   89 |   dh = DH_new();
+      |   ^~
+In file included from /usr/include/openssl/dsa.h:51,
+                 from /usr/include/openssl/x509.h:37,
+                 from /usr/include/openssl/ssl.h:31,
+                 from mini_ssl.c:15:
+/usr/include/openssl/dh.h:203:27: note: declared here
+  203 | OSSL_DEPRECATEDIN_3_0 DH *DH_new(void);
+      |                           ^~~~~~
+mini_ssl.c:104:3: warning: ‘DH_set0_pqg’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  104 |   if (p == NULL || g == NULL || !DH_set0_pqg(dh, p, NULL, g)) {
+      |   ^~
+/usr/include/openssl/dh.h:259:27: note: declared here
+  259 | OSSL_DEPRECATEDIN_3_0 int DH_set0_pqg(DH *dh, BIGNUM *p, BIGNUM *q, BIGNUM *g);
+      |                           ^~~~~~~~~~~
+mini_ssl.c:105:5: warning: ‘DH_free’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  105 |     DH_free(dh);
+      |     ^~~~~~~
+/usr/include/openssl/dh.h:204:28: note: declared here
+  204 | OSSL_DEPRECATEDIN_3_0 void DH_free(DH *dh);
+      |                            ^~~~~~~
+mini_ssl.c: In function ‘engine_init_server’:
+mini_ssl.c:145:7: warning: unused variable ‘min’ [-Wunused-variable]
+  145 |   int min, ssl_options;
+      |       ^~~
+mini_ssl.c: In function ‘engine_inject’:
+mini_ssl.c:284:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  284 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from mini_ssl.c:3:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_read’:
+mini_ssl.c:336:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  336 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_write’:
+mini_ssl.c:363:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  363 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_extract’:
+mini_ssl.c:387:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  387 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_shutdown’:
+mini_ssl.c:406:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  406 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_init’:
+mini_ssl.c:421:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  421 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘engine_peercert’:
+mini_ssl.c:434:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  434 |   Data_Get_Struct(self, ms_conn, conn);
+      |   ^~~~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mini_ssl.c: In function ‘raise_error’:
+mini_ssl.c:299:6: warning: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+  299 | void raise_error(SSL* ssl, int result) {
+      |      ^~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling puma_http11.c
+puma_http11.c: In function ‘HttpParser_alloc’:
+puma_http11.c:311:3: warning: ‘rb_data_object_wrap_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  311 |   return Data_Wrap_Struct(klass, HttpParser_mark, HttpParser_free, hp);
+      |   ^~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from puma_http11.c:9:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_init’:
+puma_http11.c:323:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  323 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_reset’:
+puma_http11.c:340:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  340 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_finish’:
+puma_http11.c:357:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  357 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_execute’:
+puma_http11.c:388:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  388 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_has_error’:
+puma_http11.c:422:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  422 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_is_finished’:
+puma_http11.c:437:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  437 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_nread’:
+puma_http11.c:453:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  453 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘HttpParser_body’:
+puma_http11.c:466:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  466 |   DATA_GET(self, puma_parser, http);
+      |   ^~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+puma_http11.c: In function ‘Init_puma_http11’:
+puma_http11.c:474:6: warning: old-style function definition [-Wold-style-definition]
+  474 | void Init_puma_http11()
+      |      ^~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object puma/puma_http11.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/puma-4.3.8/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-m4qw1l sitelibdir\=./.gem.20260113-31848-m4qw1l install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20260113-31848-m4qw1l/puma
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/puma-4.3.8/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-m4qw1l sitelibdir\=./.gem.20260113-31848-m4qw1l clean

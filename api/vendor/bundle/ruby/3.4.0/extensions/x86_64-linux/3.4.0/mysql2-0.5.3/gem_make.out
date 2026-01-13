@@ -1,0 +1,504 @@
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/mysql2-0.5.3/ext/mysql2
+/home/ayaka/.rbenv/versions/3.4.7/bin/ruby extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+-----
+Using mysql_config at /usr/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for SSL_MODE_DISABLED in mysql.h... yes
+checking for SSL_MODE_PREFERRED in mysql.h... yes
+checking for SSL_MODE_REQUIRED in mysql.h... yes
+checking for SSL_MODE_VERIFY_CA in mysql.h... yes
+checking for SSL_MODE_VERIFY_IDENTITY in mysql.h... yes
+checking for MYSQL.net.vio in mysql.h... yes
+checking for MYSQL.net.pvio in mysql.h... no
+checking for MYSQL_ENABLE_CLEARTEXT_PLUGIN in mysql.h... yes
+checking for SERVER_QUERY_NO_GOOD_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_NO_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_WAS_SLOW in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
+checking for my_bool in mysql.h... no
+-----
+Setting libpath to /usr/lib/x86_64-linux-gnu
+-----
+creating Makefile
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-e5wiw5 sitelibdir\=./.gem.20260113-31848-e5wiw5 clean
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-e5wiw5 sitelibdir\=./.gem.20260113-31848-e5wiw5
+compiling client.c
+In file included from client.c:15:
+mysql_enc_name_to_ruby.h: In function ‘mysql2_mysql_enc_name_to_rb_hash’:
+mysql_enc_name_to_ruby.h:43:1: warning: old-style function definition [-Wold-style-definition]
+   43 | mysql2_mysql_enc_name_to_rb_hash (str, len)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql_enc_name_to_ruby.h: In function ‘mysql2_mysql_enc_name_to_rb’:
+mysql_enc_name_to_ruby.h:86:1: warning: old-style function definition [-Wold-style-definition]
+   86 | mysql2_mysql_enc_name_to_rb (str, len)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_set_ssl_mode_option’:
+client.c:132:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  132 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from ./mysql2_ext.h:10,
+                 from client.c:1:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_raise_mysql2_error’:
+client.c:178:24: warning: implicit declaration of function ‘rb_tainted_str_new2’; did you mean ‘rb_enc_str_new’? [-Wimplicit-function-declaration]
+  178 |   VALUE rb_sql_state = rb_tainted_str_new2(mysql_sqlstate(wrapper->client));
+      |                        ^~~~~~~~~~~~~~~~~~~
+      |                        rb_enc_str_new
+client.c: In function ‘rb_mysql_client_warning_count’:
+client.c:366:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  366 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_info’:
+client.c:376:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  376 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_get_ssl_cipher’:
+client.c:394:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  394 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_connect’:
+client.c:425:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  425 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_close’:
+client.c:483:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  483 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_closed’:
+client.c:498:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  498 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_async_result’:
+client.c:574:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  574 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘disconnect_and_raise’:
+client.c:621:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  621 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘disconnect_and_mark_inactive’:
+client.c:685:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  685 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_set_active_thread’:
+client.c:711:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  711 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_abandon_results’:
+client.c:739:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  739 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_query’:
+client.c:768:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  768 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c:787:14: warning: passing argument 1 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  787 |   rb_rescue2(do_send_query, (VALUE)&args, disconnect_and_raise, self, rb_eException, (VALUE)0);
+      |              ^~~~~~~~~~~~~
+      |              |
+      |              VALUE (*)(void *) {aka long unsigned int (*)(void *)}
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:41:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/iterator.h:388:26: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(void *)’ {aka ‘long unsigned int (*)(void *)’}
+  388 | VALUE rb_rescue2(VALUE (*b_proc)(VALUE), VALUE data1, VALUE (*r_proc)(VALUE, VALUE), VALUE data2, ...);
+      |                  ~~~~~~~~^~~~~~~~~~~~~~
+client.c:795:16: warning: passing argument 1 of ‘rb_rescue2’ from incompatible pointer type [-Wincompatible-pointer-types]
+  795 |     rb_rescue2(do_query, (VALUE)&async_args, disconnect_and_raise, self, rb_eException, (VALUE)0);
+      |                ^~~~~~~~
+      |                |
+      |                VALUE (*)(void *) {aka long unsigned int (*)(void *)}
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/iterator.h:388:26: note: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(void *)’ {aka ‘long unsigned int (*)(void *)’}
+  388 | VALUE rb_rescue2(VALUE (*b_proc)(VALUE), VALUE data1, VALUE (*r_proc)(VALUE, VALUE), VALUE data2, ...);
+      |                  ~~~~~~~~^~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_real_escape’:
+client.c:818:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  818 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘_mysql_client_options’:
+client.c:856:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  856 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_server_info’:
+client.c:978:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  978 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_socket’:
+client.c:1002:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1002 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_last_id’:
+client.c:1019:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1019 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_affected_rows’:
+client.c:1032:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1032 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_thread_id’:
+client.c:1049:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1049 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_select_db’:
+client.c:1075:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1075 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_ping’:
+client.c:1102:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1102 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_set_server_option’:
+client.c:1119:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1119 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_more_results’:
+client.c:1135:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1135 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_next_result’:
+client.c:1151:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1151 |     GET_CLIENT(self);
+      |     ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_store_result’:
+client.c:1174:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1174 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_encoding’:
+client.c:1201:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1201 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘get_automatic_close’:
+client.c:1211:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1211 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘set_automatic_close’:
+client.c:1225:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1225 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘set_charset_name’:
+client.c:1292:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1292 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘set_ssl_options’:
+client.c:1316:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1316 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘initialize_ext’:
+client.c:1362:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1362 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘rb_mysql_client_prepare_statement’:
+client.c:1378:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+ 1378 |   GET_CLIENT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+client.c: In function ‘init_mysql2_client’:
+client.c:1384:6: warning: old-style function definition [-Wold-style-definition]
+ 1384 | void init_mysql2_client() {
+      |      ^~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling infile.c
+compiling mysql2_ext.c
+mysql2_ext.c: In function ‘Init_mysql2’:
+mysql2_ext.c:6:6: warning: old-style function definition [-Wold-style-definition]
+    6 | void Init_mysql2() {
+      |      ^~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling result.c
+result.c: In function ‘rb_mysql_result_free_’:
+result.c:117:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  117 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from ./mysql2_ext.h:10,
+                 from result.c:1:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_fetch_field’:
+result.c:142:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  142 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_alloc_result_buffers’:
+result.c:219:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  219 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_fetch_row_stmt’:
+result.c:299:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  299 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_fetch_row’:
+result.c:488:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  488 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_fetch_fields’:
+result.c:697:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  697 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_each_’:
+result.c:727:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  727 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_each’:
+result.c:816:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  816 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘rb_mysql_result_count’:
+result.c:905:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  905 |   GET_RESULT(self);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+result.c: In function ‘init_mysql2_result’:
+result.c:967:6: warning: old-style function definition [-Wold-style-definition]
+  967 | void init_mysql2_result() {
+      |      ^~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling statement.c
+statement.c: In function ‘rb_raise_mysql2_stmt_error’:
+statement.c:47:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+   47 |   GET_CLIENT(stmt_wrapper->client);
+      |   ^~~~~~~~~~
+In file included from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/ruby.h:29,
+                 from /home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby.h:38,
+                 from ./mysql2_ext.h:10,
+                 from statement.c:1:
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c:49:24: warning: implicit declaration of function ‘rb_tainted_str_new2’; did you mean ‘rb_enc_str_new’? [-Wimplicit-function-declaration]
+   49 |   VALUE rb_sql_state = rb_tainted_str_new2(mysql_stmt_sqlstate(stmt_wrapper->stmt));
+      |                        ^~~~~~~~~~~~~~~~~~~
+      |                        rb_enc_str_new
+statement.c: In function ‘rb_mysql_stmt_new’:
+statement.c:109:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  109 |     GET_CLIENT(rb_client);
+      |     ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_param_count’:
+statement.c:147:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  147 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_field_count’:
+statement.c:157:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  157 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_execute’:
+statement.c:261:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  261 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c:262:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  262 |   GET_CLIENT(stmt_wrapper->client);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_fields’:
+statement.c:491:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  491 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c:492:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  492 |   GET_CLIENT(stmt_wrapper->client);
+      |   ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c:497:5: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  497 |     GET_CLIENT(stmt_wrapper->client);
+      |     ^~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_last_id’:
+statement.c:538:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  538 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_affected_rows’:
+statement.c:549:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  549 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘rb_mysql_stmt_close’:
+statement.c:567:3: warning: ‘rb_data_object_get_warning’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  567 |   GET_STATEMENT(self);
+      |   ^~~~~~~~~~~~~
+/home/ayaka/.rbenv/versions/3.4.7/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+statement.c: In function ‘init_mysql2_statement’:
+statement.c:573:6: warning: old-style function definition [-Wold-style-definition]
+  573 | void init_mysql2_statement() {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object mysql2/mysql2.so
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-e5wiw5 sitelibdir\=./.gem.20260113-31848-e5wiw5 install
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20260113-31848-e5wiw5/mysql2
+
+current directory: /home/ayaka/Workspace/she/infra-workshop-app/api/vendor/bundle/ruby/3.4.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= sitearchdir\=./.gem.20260113-31848-e5wiw5 sitelibdir\=./.gem.20260113-31848-e5wiw5 clean
