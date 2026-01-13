@@ -32,7 +32,6 @@ export default function ToDosAddDialog({addToDo}: ToDosAddDialogProps): ReactEle
             <Button
                 id="ToDo-dialog-button"
                 theme="secondary"
-                themeType="circular"
                 style={{position: 'fixed', bottom: '1rem', right: '1rem'}}
                 onClick={show}>
                 <AddSVGIcon />

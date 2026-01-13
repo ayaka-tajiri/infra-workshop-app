@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   db:
     container_name: database
@@ -38,16 +36,13 @@ services:
       DATABASE: infra_workshop
 
   front:
+    container_name: web
     build:
       context: front/
       dockerfile: Dockerfile.dev
-    container_name: web
+    user: "${UID}:${GID}"
+    command: ["yarn", "dev", "-p", "3001"]
     volumes:
       - ./front/app:/usr/src/app
-      - front_node_modules:/usr/src/app/node_modules
-    command: yarn dev
     ports:
-      - "4001:3000"
-
-volumes:
-  front_node_modules:
+      - "4001:3001"

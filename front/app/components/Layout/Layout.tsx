@@ -50,12 +50,12 @@ export default function Layout({children}: LayoutProps): ReactElement {
             </LayoutComponent> */}
             <LayoutComponent
                 id="infra-workshop-layout"
-                className="appLayout"
+                // className="appLayout"
                 navHeaderTitle="ToDo APP"
                 desktopLayout={desktopLayout}
                 treeProps={useLayoutNavigation(NavItems, pathname, LinkUnstyled)}
                 mainProps={{ component: "div" }}
-                >
+            >
                 {children}
                 </LayoutComponent>
         </Configuration>
